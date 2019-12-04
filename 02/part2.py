@@ -45,7 +45,7 @@ def test(_code_array, noun, verb):
     return bool(code_array[0] == TARGET)
 
 
-for x, y in permutations(range(0, 99), 2):
+for x, y in permutations(range(0, 100), 2):
     if test(original_code_array, x, y):
         print(100 * x + y)
         break
